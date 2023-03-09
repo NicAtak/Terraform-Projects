@@ -137,8 +137,8 @@ resource "aws_instance" "web-server-instance" {
     user_data = <<-EOF
             #!/bin/bash
             sudo apt update -y
-            sudo apt install apache1 -y
-            duo systemctl start apache2
+            sudo apt install apache2 -y
+            sudo systemctl start apache2
             sudo bash -c "echo your very first webserver > /var/www/html/index.html"
             EOF
     tags = {
