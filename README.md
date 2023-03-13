@@ -12,3 +12,7 @@ I used Terraform to provision the following resources to set up my first web ser
   - Security Group allowing ports: 22, 80, 433
   - Elastic IP
   - Ubuntu Server w/ Apache2
+
+## Variable
+
+Using a new new file with ".tfvars " I was able to add in variables that the main.tf file could pull from 
