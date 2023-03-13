@@ -12,8 +12,30 @@ provider "aws" {
 }
 
 
+variable "subnet_prefix" {
+  description = "cidr blcok for the subnet"
+}
 
-# 1. Create VPC
+resource "aws_vpc" "prod-vpc" {
+  cidr_block = "10.0.0.0/16"
+  tags = {
+    Name = "production"
+  }
+}
+
+
+resource "aws_subnet" "subnet-1" {
+  vpc_id = aws_vpc.prod-vpc.id
+  cidr_block = var.subnet_prefix
+  availability_zone = "us-west-2a"
+
+  tags = {
+    Name = "prod-subnet"
+  }
+}
+
+
+/* # 1. Create VPC
 
 resource "aws_vpc" "project-vpc" {
   cidr_block       = "10.0.0.0/16"
@@ -147,4 +169,9 @@ resource "aws_instance" "web-server-instance" {
 
 }
 
-
+output "server_private_ip" {
+  value = aws_instance.web-server-instance.private_ip
+}
+output "server_id" {
+  value = aws_instance.web-server-instance.id
+} */
