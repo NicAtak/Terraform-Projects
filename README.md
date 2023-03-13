@@ -19,4 +19,4 @@ Using a new new file with ".tfvars " I was able to add in one variable that the 
 
 ## Multi-Variables
 
-Added one variable that consisted of a list, giving specs for two subnests in the main.tf
+Added one variable that consisted of a list of strings, giving specs for two subnests in the main.tf
