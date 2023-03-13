@@ -17,6 +17,10 @@ I used Terraform to provision the following resources to set up my first web ser
 
 Using a new new file with ".tfvars " I was able to add in one variable that the main.tf file could pull from.
 
-## Multi-Variables
+## Multi-Variables-Strings
 
-Added one variable that consisted of a list of strings, giving specs for two subnests in the main.tf
+Added one variable that consisted of a list of strings, to congif two subnets
+
+## Two Variables-Objects
+
+Created a variable using one object with two properties to configure two subnets
