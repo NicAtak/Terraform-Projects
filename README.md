@@ -24,3 +24,8 @@ Added one variable that consisted of a list of strings, to congif two subnets
 ## Two Variables-Objects
 
 Created a variable using one object with two properties to configure two subnets
+
+## Udemy Course: Terraform MasterClass- From Zero to Certified Professional
+
+All files used within this course for various projects.
+
