@@ -4,6 +4,6 @@ resource "aws_instance" "udemy_instance" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "threedemoinstance"
+    Name = "demoinstance-${count.index}"
   }
 }
