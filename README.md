@@ -29,3 +29,9 @@ Created a variable using one object with two properties to configure two subnets
 
 All files used within this course for various projects.
 
+## Hashicorp Terraform Learn Modules
+
+Created two module folders:
+  * Parent Module Folder to spin up VPC, EC2 and S3 Bucket
+  * Child Module Folder containing all variables and information for the S3 Bucket
+
