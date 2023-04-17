@@ -5,4 +5,7 @@ resource "aws_instance" "udemy_instance" {
   tags = {
     Name = "demoinstance"
   }
+
+  security_groups = "${var.Security_Group}"
 }
+
