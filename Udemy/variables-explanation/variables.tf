@@ -8,5 +8,5 @@ variable "AWS_REGION"{
 
 variable "Security_Group"{
     type= list(string)
-    default = ["sg-24076", "sg-90890", "sg-456789"]
+    default = ["sg-24example", "sg-90example", "sg-45example"]
 }
