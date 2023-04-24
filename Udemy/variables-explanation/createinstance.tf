@@ -1,5 +1,5 @@
 resource "aws_instance" "udemy_instance" {
-  ami           = "ami-0735c191cf914754d"
+  ami           = lookup(var.AMIS, var.AWS_REGION)
   instance_type = "t2.micro"
 
   tags = {
