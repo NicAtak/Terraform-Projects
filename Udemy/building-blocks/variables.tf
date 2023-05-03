@@ -1,6 +1,6 @@
 variable "AWS_ACCESS_KEY" {
     type = string
-    default = "AKIASMSIZOF42P2VUDSZ"
+    default = "AKIAXQCRRJPD4IMR4V4Q"
 }
 
 variable "AWS_SECRET_KEY" {}
@@ -17,10 +17,10 @@ variable "Security_Group"{
 variable "AMIS" {
     type = map
     default = {
-        us-east-1 = "ami-0f40c8f97004632f9"
-        us-east-2 = "ami-05692172625678b4e"
-        us-west-2 = "ami-0352d5a37fb4f603f"
-        us-west-1 = "ami-0f40c8f97004632f9"
+        us-west-1 = "ami-007ef5e8a5e43d323"
+        us-west-2 = "ami-0bac99f077c41ae58"
+        us-east-1 = "ami-04b3c39a8a1c62b76"
+        us-east-2 = "ami-0a561b65214a47cac"
     }
 }
 
