@@ -1,3 +1,4 @@
+
 resource "aws_key_pair" "levelup_key" {
     key_name = "levelup_key"
     public_key = file(var.PATH_TO_PUBLIC_KEY)
@@ -21,7 +22,7 @@ resource "aws_instance" "MyFirstInstnace" {
     inline = [
       "chmod +x /tmp/installNginx.sh",
       "sudo sed -i -e 's/\r$//' /tmp/installNginx.sh",  # Remove the spurious CR characters.
-      "sudo /tmp/installNginx.sh", # Good to use SUDO so we will not get permission errors.
+      "sudo /tmp/installNginx.sh",
     ]
   }
 
