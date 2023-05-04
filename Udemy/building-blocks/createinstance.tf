@@ -11,6 +11,8 @@ resource "aws_instance" "MyFirstInstnace" {
 
   tags = {
     Name = "custom_instance"
+
+  security_groups = "${var.Security_Group}"
   }
 
   provisioner "file" {
