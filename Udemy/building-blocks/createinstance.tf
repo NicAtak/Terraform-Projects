@@ -14,7 +14,7 @@ resource "aws_instance" "MyFirstInstnace" {
   }
 
   provisioner "file" {
-      source = "installNginx.sh"
+      source = "/Terraform-Projects/Udemy/building-blocks/installNginx.sh"
       destination = "/tmp/installNginx.sh"
   }
 
