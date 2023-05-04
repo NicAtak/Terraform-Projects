@@ -13,7 +13,7 @@ resource "aws_instance" "MyFirstInstnace" {
     Name = "custom_instance"
   }
   
-  security_groups = "${var.Security_Group}"
+  security_groups = ["sg-0f59a20890245c836"]
   
 
   provisioner "file" {
