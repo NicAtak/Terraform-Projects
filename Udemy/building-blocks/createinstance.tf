@@ -11,9 +11,10 @@ resource "aws_instance" "MyFirstInstnace" {
 
   tags = {
     Name = "custom_instance"
-
-  security_groups = "${var.Security_Group}"
   }
+  
+  security_groups = "${var.Security_Group}"
+  
 
   provisioner "file" {
       source = "/Terraform-Projects/Udemy/building-blocks/installNginx.sh"
